@@ -40,41 +40,41 @@ export const ServicesSection: React.FC = () => {
   };
 
   return (
-    <section id="services" className="py-20 md:py-28 bg-ivory/50 relative">
+    <section id="services" className="py-12 sm:py-16 md:py-24 lg:py-28 bg-ivory/50 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="max-w-3xl mx-auto text-center space-y-4 mb-16">
+        <div className="max-w-3xl mx-auto text-center space-y-3 sm:space-y-4 mb-8 sm:mb-12 md:mb-16">
           <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white text-gold-700 text-xs font-semibold border border-gold-300/60 shadow-sm">
             <span>{language === "ar" ? "حلول تعاقدية متخصصة" : "Specialized Contractual Solutions"}</span>
           </div>
 
-          <h2 className="text-3xl sm:text-4xl font-bold text-navy-900 leading-normal md:leading-relaxed font-arabic">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-navy-900 leading-snug sm:leading-normal font-arabic">
             {t("servicesHeading")}
           </h2>
 
-          <p className="text-base text-subtext leading-relaxed">
+          <p className="text-sm sm:text-base text-subtext leading-relaxed">
             {t("servicesSubtitle")}
           </p>
         </div>
 
         {/* Services Grid (6 cards) */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 md:gap-8">
           {servicesData.map((service) => {
             const IconComponent = iconMap[service.iconName] || FileText;
 
             return (
               <div
                 key={service.id}
-                className="luxury-card rounded-xl p-7 bg-white border border-gold-500/25 flex flex-col justify-between relative group"
+                className="luxury-card rounded-xl p-5 sm:p-6 md:p-7 bg-white border border-gold-500/25 flex flex-col justify-between relative group"
               >
                 {/* Gold Top Accent */}
                 <div className="absolute top-0 left-0 right-0 h-1 bg-gold-500/30 group-hover:bg-gold-500 transition-colors" />
 
                 <div>
                   {/* Badge & Icon Row */}
-                  <div className="flex items-center justify-between mb-6">
-                    <div className="w-12 h-12 rounded-lg bg-navy-50 text-navy-900 border border-navy-100 flex items-center justify-center group-hover:bg-gold-50 group-hover:text-gold-700 transition-colors">
-                      <IconComponent className="w-6 h-6 text-gold-600" />
+                  <div className="flex items-center justify-between mb-4 sm:mb-6">
+                    <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg bg-navy-50 text-navy-900 border border-navy-100 flex items-center justify-center group-hover:bg-gold-50 group-hover:text-gold-700 transition-colors flex-shrink-0">
+                      <IconComponent className="w-5 h-5 sm:w-6 sm:h-6 text-gold-600" />
                     </div>
 
                     {service.badge && (

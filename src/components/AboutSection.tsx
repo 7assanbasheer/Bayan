@@ -10,16 +10,16 @@ export const AboutSection: React.FC = () => {
   const { language, t, isRtl } = useLanguage();
 
   return (
-    <section className="py-20 md:py-28 bg-white relative overflow-hidden">
+    <section className="py-12 sm:py-16 md:py-24 lg:py-28 bg-white relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-10 lg:gap-16 items-center">
           {/* Visual Profile Editorial Column (5 cols) */}
           <div className="lg:col-span-5 relative">
             <div className="relative mx-auto max-w-md">
               {/* Decorative Background Frame */}
               <div className="absolute -inset-4 rounded-2xl bg-gradient-to-tr from-gold-500/20 via-navy-900/5 to-transparent blur-lg" />
 
-              <div className="relative rounded-xl bg-ivory p-8 border border-gold-500/30 shadow-luxury space-y-6">
+              <div className="relative rounded-xl bg-ivory p-5 sm:p-7 md:p-8 border border-gold-500/30 shadow-luxury space-y-5 sm:space-y-6">
                 <div className="flex items-center justify-between pb-4 border-b border-navy-100">
                   <span className="text-xs font-semibold tracking-wider uppercase text-gold-600">
                     {siteConfig.degree[language]}
@@ -27,14 +27,14 @@ export const AboutSection: React.FC = () => {
                   <GraduationCap className="w-5 h-5 text-gold-600" />
                 </div>
 
-                <div className="space-y-3">
-                  <h3 className="text-xl sm:text-2xl font-serif font-bold text-navy-900 whitespace-nowrap">
+                <div className="space-y-2 sm:space-y-3">
+                  <h3 className="text-lg sm:text-xl md:text-2xl font-serif font-bold text-navy-900 leading-snug">
                     {siteConfig.name[language]}
                   </h3>
                   <p className="text-xs text-gold-600 font-semibold uppercase tracking-wider">
                     {siteConfig.roleTitle[language]} • {siteConfig.shortDegree[language]}
                   </p>
-                  <p className="text-sm text-subtext leading-relaxed">
+                  <p className="text-xs sm:text-sm text-subtext leading-relaxed">
                     {siteConfig.aboutSnippet[language]}
                   </p>
                 </div>
@@ -118,10 +118,10 @@ export const AboutSection: React.FC = () => {
               </div>
             </div>
 
-            <div className="pt-4 flex flex-wrap items-center gap-4">
+            <div className="pt-3 sm:pt-4 flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4">
               <Link
                 href="/about"
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-sm bg-navy-900 hover:bg-navy-800 text-white font-semibold text-sm shadow-sm transition-all border border-gold-500/40 group"
+                className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-sm bg-navy-900 hover:bg-navy-800 text-white font-semibold text-xs sm:text-sm shadow-sm transition-all border border-gold-500/40 group text-center"
               >
                 <span>{t("learnMoreAboutExperience")}</span>
                 <ArrowUpRight
@@ -135,7 +135,7 @@ export const AboutSection: React.FC = () => {
 
               <Link
                 href="/contact"
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-sm bg-white hover:bg-gold-50 text-navy-900 font-semibold text-sm border border-navy-200 transition-colors"
+                className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-sm bg-white hover:bg-gold-50 text-navy-900 font-semibold text-xs sm:text-sm border border-navy-200 transition-colors text-center"
               >
                 <span>{t("contactMe")}</span>
               </Link>

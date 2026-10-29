@@ -165,33 +165,33 @@ const ContactSectionInner: React.FC<{ isStandalonePage?: boolean }> = ({
   };
 
   return (
-    <section id="contact" className={`py-20 md:py-28 ${isStandalonePage ? "bg-ivory" : "bg-white"} relative`}>
+    <section id="contact" className={`py-12 sm:py-16 md:py-24 lg:py-28 ${isStandalonePage ? "bg-ivory" : "bg-white"} relative`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="max-w-3xl mx-auto text-center space-y-4 mb-16">
+        <div className="max-w-3xl mx-auto text-center space-y-3 sm:space-y-4 mb-8 sm:mb-12 md:mb-16">
           <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-gold-50 text-gold-700 text-xs font-semibold border border-gold-300">
             <Lock className="w-3.5 h-3.5 text-gold-600" />
             <span>{language === "ar" ? "خصوصية وسرية تامة" : "Confidential & Secure"}</span>
           </div>
 
-          <h2 className="text-3xl sm:text-4xl font-bold text-navy-900 leading-normal md:leading-relaxed font-arabic">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-navy-900 leading-snug sm:leading-normal font-arabic">
             {t("contactHeading")}
           </h2>
 
-          <p className="text-base text-subtext leading-relaxed">
+          <p className="text-sm sm:text-base text-subtext leading-relaxed">
             {t("contactSubtitle")}
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
           {/* Direct Contact Info Sidebar (5 cols) */}
-          <div className="lg:col-span-5 space-y-8">
-            <div className="rounded-xl bg-navy-950 text-white p-8 border border-gold-500/30 shadow-luxury space-y-6">
+          <div className="lg:col-span-5 space-y-6 sm:space-y-8">
+            <div className="rounded-xl bg-navy-950 text-white p-5 sm:p-7 md:p-8 border border-gold-500/30 shadow-luxury space-y-5 sm:space-y-6">
               <span className="text-xs font-semibold uppercase tracking-wider text-gold-400">
                 {language === "ar" ? "بيانات التواصل الرسمية" : "Official Contact Information"}
               </span>
 
-              <h3 className="text-xl font-bold font-arabic text-white whitespace-nowrap">
+              <h3 className="text-lg sm:text-xl font-bold font-arabic text-white leading-snug">
                 {siteConfig.name[language]}
               </h3>
 
@@ -265,7 +265,7 @@ const ContactSectionInner: React.FC<{ isStandalonePage?: boolean }> = ({
 
           {/* Contact Form (7 cols) */}
           <div className="lg:col-span-7">
-            <div className="rounded-xl bg-white p-7 sm:p-9 border border-gold-500/30 shadow-luxury">
+            <div className="rounded-xl bg-white p-5 sm:p-7 md:p-9 border border-gold-500/30 shadow-luxury">
               {submissionStatus === "success" ? (
                 <div className="py-8 text-center space-y-4">
                   <div className="w-16 h-16 rounded-full bg-emerald-50 text-emerald-600 flex items-center justify-center mx-auto border border-emerald-200">
@@ -351,7 +351,7 @@ const ContactSectionInner: React.FC<{ isStandalonePage?: boolean }> = ({
                   </div>
                 </div>
               ) : (
-                <form onSubmit={handleSubmit} className="space-y-5" noValidate>
+                <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-5" noValidate>
                   {submissionStatus === "error" && (
                     <div className="p-3.5 rounded bg-red-50 text-red-800 text-xs flex items-center gap-2 border border-red-200">
                       <AlertCircle className="w-4 h-4 flex-shrink-0 text-red-600" />
@@ -360,7 +360,7 @@ const ContactSectionInner: React.FC<{ isStandalonePage?: boolean }> = ({
                   )}
 
                   {/* Full Name & Email Row */}
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5">
                     <div>
                       <label className="block text-xs font-semibold text-navy-900 mb-1.5">
                         {t("formFullName")} <span className="text-red-500">*</span>
@@ -370,7 +370,7 @@ const ContactSectionInner: React.FC<{ isStandalonePage?: boolean }> = ({
                         value={formData.fullName}
                         onChange={(e) => setFormData({ ...formData, fullName: e.target.value })}
                         placeholder={language === "ar" ? "مثال: عبدالله الشمري" : "e.g. John Smith"}
-                        className={`w-full px-3.5 py-2.5 rounded border text-sm text-navy-900 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-gold-500/50 transition-all ${
+                        className={`w-full px-3.5 py-2.5 rounded border text-base sm:text-sm text-navy-900 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-gold-500/50 transition-all ${
                           errors.fullName ? "border-red-400 bg-red-50/20" : "border-gray-200 bg-gray-50/50"
                         }`}
                       />
@@ -388,7 +388,7 @@ const ContactSectionInner: React.FC<{ isStandalonePage?: boolean }> = ({
                         value={formData.email}
                         onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                         placeholder="name@company.com"
-                        className={`w-full px-3.5 py-2.5 rounded border text-sm text-navy-900 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-gold-500/50 transition-all ${
+                        className={`w-full px-3.5 py-2.5 rounded border text-base sm:text-sm text-navy-900 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-gold-500/50 transition-all ${
                           errors.email ? "border-red-400 bg-red-50/20" : "border-gray-200 bg-gray-50/50"
                         }`}
                       />
@@ -399,7 +399,7 @@ const ContactSectionInner: React.FC<{ isStandalonePage?: boolean }> = ({
                   </div>
 
                   {/* Phone & Service Selector Row */}
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5">
                     <div>
                       <label className="block text-xs font-semibold text-navy-900 mb-1.5">
                         {t("formPhone")} <span className="text-red-500">*</span>
@@ -410,7 +410,7 @@ const ContactSectionInner: React.FC<{ isStandalonePage?: boolean }> = ({
                         onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                         placeholder="05xxxxxxxx"
                         dir="ltr"
-                        className={`w-full px-3.5 py-2.5 rounded border text-sm text-navy-900 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-gold-500/50 transition-all ${
+                        className={`w-full px-3.5 py-2.5 rounded border text-base sm:text-sm text-navy-900 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-gold-500/50 transition-all ${
                           errors.phone ? "border-red-400 bg-red-50/20" : "border-gray-200 bg-gray-50/50"
                         }`}
                       />
@@ -426,7 +426,7 @@ const ContactSectionInner: React.FC<{ isStandalonePage?: boolean }> = ({
                       <select
                         value={formData.serviceType}
                         onChange={(e) => setFormData({ ...formData, serviceType: e.target.value })}
-                        className="w-full px-3.5 py-2.5 rounded border border-gray-200 bg-gray-50/50 text-sm text-navy-900 focus:outline-none focus:ring-2 focus:ring-gold-500/50 transition-all"
+                        className="w-full px-3.5 py-2.5 rounded border border-gray-200 bg-gray-50/50 text-base sm:text-sm text-navy-900 focus:outline-none focus:ring-2 focus:ring-gold-500/50 transition-all"
                       >
                         <option value="">{t("formSelectServicePlaceholder")}</option>
                         {servicesData.map((s) => (
@@ -443,7 +443,7 @@ const ContactSectionInner: React.FC<{ isStandalonePage?: boolean }> = ({
                     <label className="block text-xs font-semibold text-navy-900 mb-2">
                       {t("formPreferredContact")}
                     </label>
-                    <div className="grid grid-cols-3 gap-3">
+                    <div className="grid grid-cols-3 gap-2 sm:gap-3">
                       {[
                         { id: "whatsapp", label: t("formContactWhatsApp"), icon: MessageCircle },
                         { id: "phone", label: t("formContactPhone"), icon: Phone },
@@ -461,14 +461,14 @@ const ContactSectionInner: React.FC<{ isStandalonePage?: boolean }> = ({
                                 preferredContact: item.id as "whatsapp" | "phone" | "email",
                               })
                             }
-                            className={`flex items-center justify-center gap-2 p-2.5 rounded border text-xs font-medium transition-all ${
+                            className={`flex items-center justify-center gap-1.5 sm:gap-2 p-2 sm:p-2.5 rounded border text-[11px] sm:text-xs font-medium transition-all ${
                               isSelected
                                 ? "bg-navy-900 text-gold-400 border-navy-900 shadow-sm"
                                 : "bg-gray-50 text-navy-800 border-gray-200 hover:bg-gray-100"
                             }`}
                           >
-                            <Icon className="w-3.5 h-3.5" />
-                            <span>{item.label}</span>
+                            <Icon className="w-3.5 h-3.5 flex-shrink-0" />
+                            <span className="truncate">{item.label}</span>
                           </button>
                         );
                       })}
@@ -489,7 +489,7 @@ const ContactSectionInner: React.FC<{ isStandalonePage?: boolean }> = ({
                           ? "اذكر نوع العقد، أو ملخص المسودة، والهدف من الاتفاقية..."
                           : "State contract category, draft highlights, or key objective..."
                       }
-                      className={`w-full px-3.5 py-2.5 rounded border text-sm text-navy-900 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-gold-500/50 transition-all ${
+                      className={`w-full px-3.5 py-2.5 rounded border text-base sm:text-sm text-navy-900 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-gold-500/50 transition-all ${
                         errors.message ? "border-red-400 bg-red-50/20" : "border-gray-200 bg-gray-50/50"
                       }`}
                     />

@@ -55,11 +55,11 @@ export default function AboutPage() {
                 <div className="relative z-10 w-20 h-20 rounded-full bg-navy-900 border border-gold-400 flex items-center justify-center text-gold-400 font-serif text-3xl font-bold shadow-md">
                   BA
                 </div>
-                <div className="relative z-10 mt-3 text-center">
-                  <span className="text-white font-bold text-sm block whitespace-nowrap">
+                <div className="relative z-10 mt-3 text-center px-1">
+                  <span className="text-white font-bold text-xs sm:text-sm block leading-tight">
                     {siteConfig.name[language]}
                   </span>
-                  <span className="text-gold-400 text-xs font-serif">
+                  <span className="text-gold-400 text-xs font-serif block mt-1">
                     {siteConfig.shortDegree[language]}
                   </span>
                 </div>

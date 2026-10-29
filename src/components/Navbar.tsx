@@ -80,7 +80,7 @@ export const Navbar: React.FC = () => {
             : "bg-ivory/90 backdrop-blur-sm border-b border-black/5 py-4"
         }`}
       >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
+        <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 flex items-center justify-between gap-2">
           {/* Logo */}
           <BrandLogo size="md" />
 
@@ -131,10 +131,10 @@ export const Navbar: React.FC = () => {
           </div>
 
           {/* Mobile Menu & Language Toggle */}
-          <div className="flex items-center gap-2 lg:hidden">
+          <div className="flex items-center gap-1.5 sm:gap-2 lg:hidden flex-shrink-0">
             <button
               onClick={toggleLanguage}
-              className="flex items-center gap-1 px-2.5 py-1.5 rounded text-xs font-semibold bg-white border border-gold-500/30 text-navy-900"
+              className="flex items-center gap-1 px-2 sm:px-2.5 py-1.5 rounded text-xs font-semibold bg-white border border-gold-500/30 text-navy-900 shadow-sm"
               aria-label="Toggle Language"
             >
               <Globe className="w-3.5 h-3.5 text-gold-600" />
@@ -143,10 +143,10 @@ export const Navbar: React.FC = () => {
 
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="p-2 rounded-md text-navy-900 hover:bg-gold-50 hover:text-gold-600 focus:outline-none transition-colors border border-navy-200/60"
+              className="p-1.5 sm:p-2 rounded-md text-navy-900 hover:bg-gold-50 hover:text-gold-600 focus:outline-none transition-colors border border-navy-200/60 shadow-sm"
               aria-label="Toggle navigation menu"
             >
-              {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+              {mobileMenuOpen ? <X className="w-5 h-5 sm:w-6 sm:h-6" /> : <Menu className="w-5 h-5 sm:w-6 sm:h-6" />}
             </button>
           </div>
         </div>

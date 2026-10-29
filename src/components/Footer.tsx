@@ -21,28 +21,28 @@ export const Footer: React.FC = () => {
       <div className="absolute bottom-0 left-1/4 w-96 h-96 bg-navy-800/40 rounded-full blur-3xl pointer-events-none" />
 
       {/* Main Footer Content */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-12 relative z-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 lg:gap-8 pb-12 border-b border-navy-800">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 sm:pt-16 pb-8 sm:pb-12 relative z-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 sm:gap-10 lg:gap-8 pb-8 sm:pb-12 border-b border-navy-800">
           {/* Brand Column (5 cols) */}
-          <div className="lg:col-span-5 space-y-5">
+          <div className="lg:col-span-5 space-y-4 sm:space-y-5">
             <BrandLogo light size="lg" />
-            <p className="text-gray-300 text-sm leading-relaxed max-w-md pt-2">
+            <p className="text-gray-300 text-xs sm:text-sm leading-relaxed max-w-md pt-1 sm:pt-2">
               {siteConfig.heroBio[language]}
             </p>
 
             {/* Credential Badges */}
-            <div className="pt-2 flex flex-wrap gap-2.5 text-xs text-gold-300">
-              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded bg-navy-900 border border-gold-500/30">
-                <CheckCircle2 className="w-3.5 h-3.5 text-gold-400" />
-                {siteConfig.degree[language]}
+            <div className="pt-2 flex flex-wrap gap-2 text-[11px] sm:text-xs text-gold-300">
+              <span className="inline-flex items-center gap-1.5 px-2.5 sm:px-3 py-1 rounded bg-navy-900 border border-gold-500/30">
+                <CheckCircle2 className="w-3.5 h-3.5 text-gold-400 flex-shrink-0" />
+                <span>{siteConfig.degree[language]}</span>
               </span>
-              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded bg-navy-900 border border-gold-500/30">
-                <CheckCircle2 className="w-3.5 h-3.5 text-gold-400" />
-                {language === "ar" ? "+5 سنوات خبرة مهنية" : "+5 Years Experience"}
+              <span className="inline-flex items-center gap-1.5 px-2.5 sm:px-3 py-1 rounded bg-navy-900 border border-gold-500/30">
+                <CheckCircle2 className="w-3.5 h-3.5 text-gold-400 flex-shrink-0" />
+                <span>{language === "ar" ? "+5 سنوات خبرة مهنية" : "+5 Years Experience"}</span>
               </span>
-              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded bg-navy-900 border border-gold-500/30">
-                <CheckCircle2 className="w-3.5 h-3.5 text-gold-400" />
-                {language === "ar" ? "+50 عقدًا عمليًا" : "+50 Contracts Track Record"}
+              <span className="inline-flex items-center gap-1.5 px-2.5 sm:px-3 py-1 rounded bg-navy-900 border border-gold-500/30">
+                <CheckCircle2 className="w-3.5 h-3.5 text-gold-400 flex-shrink-0" />
+                <span>{language === "ar" ? "+50 عقدًا عمليًا" : "+50 Contracts Track Record"}</span>
               </span>
             </div>
           </div>

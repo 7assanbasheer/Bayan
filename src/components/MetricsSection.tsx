@@ -45,8 +45,8 @@ export const MetricsSection: React.FC = () => {
   ];
 
   return (
-    <section className="relative -mt-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-20">
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+    <section className="relative mt-6 sm:-mt-8 md:-mt-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-20">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6">
         {metrics.map((metric) => {
           const Icon = metric.icon;
           const isTextStat = metric.id === "location";
@@ -54,38 +54,38 @@ export const MetricsSection: React.FC = () => {
           return (
             <div
               key={metric.id}
-              className="luxury-card rounded-xl p-7 bg-white border border-gold-500/25 relative overflow-hidden group flex flex-col justify-between"
+              className="luxury-card rounded-xl p-5 sm:p-6 md:p-7 bg-white border border-gold-500/25 relative overflow-hidden group flex flex-col justify-between"
             >
               {/* Gold Top Accent */}
               <div className="absolute top-0 left-0 right-0 h-1 bg-gold-500/30 group-hover:bg-gold-500 transition-colors" />
 
               <div>
                 {/* Stat & Icon Row */}
-                <div className="flex items-start justify-between gap-4 mb-4">
-                  <div className="flex items-baseline gap-2">
+                <div className="flex items-start justify-between gap-3 mb-3 sm:mb-4">
+                  <div className="flex items-baseline gap-1.5 sm:gap-2">
                     <span
                       className={`${
                         isTextStat
-                          ? "text-2xl sm:text-2xl md:text-[1.65rem] font-bold font-arabic text-navy-900"
+                          ? "text-xl sm:text-2xl md:text-[1.65rem] font-bold font-arabic text-navy-900"
                           : "text-3xl sm:text-4xl md:text-5xl font-bold font-serif text-navy-900"
                       } group-hover:text-gold-600 transition-colors`}
                     >
                       {metric.stat}
                     </span>
                     {metric.unit && (
-                      <span className="text-sm font-semibold text-gold-600 font-arabic">
+                      <span className="text-xs sm:text-sm font-semibold text-gold-600 font-arabic">
                         {metric.unit}
                       </span>
                     )}
                   </div>
 
-                  <div className="w-12 h-12 rounded-xl bg-navy-50 text-navy-900 border border-navy-100 flex items-center justify-center flex-shrink-0 group-hover:bg-gold-50 group-hover:text-gold-700 transition-colors">
-                    <Icon className="w-6 h-6 text-gold-600" />
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-navy-50 text-navy-900 border border-navy-100 flex items-center justify-center flex-shrink-0 group-hover:bg-gold-50 group-hover:text-gold-700 transition-colors">
+                    <Icon className="w-5 h-5 sm:w-6 sm:h-6 text-gold-600" />
                   </div>
                 </div>
 
                 {/* Clear, Non-repetitive Title */}
-                <h3 className="text-base font-bold text-navy-900 font-arabic mb-1.5 leading-snug">
+                <h3 className="text-sm sm:text-base font-bold text-navy-900 font-arabic mb-1 leading-snug">
                   {metric.title}
                 </h3>
 
