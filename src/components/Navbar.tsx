@@ -57,7 +57,7 @@ export const Navbar: React.FC = () => {
           <div className="flex items-center gap-4">
             <span className="inline-flex items-center gap-1.5 text-gold-400 font-medium">
               <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
-              {language === "ar" ? "مكتب بيان لاستشارات العقود | استشاري عقود احترافية" : "Bayan Office for Contract Consulting | Professional Contracts Consultant"}
+              {language === "ar" ? "مكتب بيان لاستشارات العقود | خدمات قانونية" : "Bayan Office for Contract Consulting | Legal Services"}
             </span>
             <span className="text-white/20">|</span>
             <button

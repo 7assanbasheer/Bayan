@@ -97,13 +97,9 @@ export const BrandLogo: React.FC<BrandLogoProps> = ({ light = false, size = "md"
             {language === "ar" ? "مكتب بيان لاستشارات العقود" : "BAYAN CONTRACT CONSULTING"}
           </span>
         </div>
-        <div className="flex items-center gap-2 -mt-0.5 whitespace-nowrap">
-          <span className={`${textStyles[size].ar} ${goldColor} font-semibold font-arabic whitespace-nowrap`}>
-            {language === "ar" ? "استشاري عقود احترافية" : "Contracts Consultant"}
-          </span>
-          <span className="w-1 h-1 rounded-full bg-gold-500/50 flex-shrink-0" />
-          <span className={`${textStyles[size].subtitle} ${secondaryColor} uppercase tracking-wider font-medium whitespace-nowrap`}>
-            {language === "ar" ? "وخدمات قانونية" : "Legal Services"}
+        <div className="flex items-center -mt-0.5 whitespace-nowrap">
+          <span className={`${textStyles[size].subtitle} ${goldColor} uppercase tracking-wider font-semibold whitespace-nowrap`}>
+            {language === "ar" ? "خدمات قانونية" : "Legal Services"}
           </span>
         </div>
       </div>
