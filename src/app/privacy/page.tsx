@@ -118,8 +118,8 @@ export default function PrivacyPage() {
             </h3>
             <p>
               {language === "ar"
-                ? "يحق للعميل في أي وقت طلب تصحيح أو استعراض أو حذف بيانات التواصل الخاصة به التي زوّدنا بها عبر التواصل المباشر مع مكتب بيان على البريد المعتمد BAYAN@BAYAN.LAW.SA."
-                : "You reserve the right under the Saudi Personal Data Protection Law (PDPL) to request the inspection, rectification, or erasure of your contact details by writing to Bayan Office at BAYAN@BAYAN.LAW.SA."}
+                ? "يحق للعميل في أي وقت طلب تصحيح أو استعراض أو حذف بيانات التواصل الخاصة به التي زوّدنا بها عبر التواصل المباشر مع مكتب بيان على البريد المعتمد b.a.alj3fr@hotmail.com."
+                : "You reserve the right under the Saudi Personal Data Protection Law (PDPL) to request the inspection, rectification, or erasure of your contact details by writing to Bayan Office at b.a.alj3fr@hotmail.com."}
             </p>
           </div>
 

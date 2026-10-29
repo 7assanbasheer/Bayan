@@ -36,7 +36,7 @@ export async function POST(request: Request) {
           },
           body: JSON.stringify({
             from: process.env.EMAIL_FROM || "onboarding@resend.dev",
-            to: process.env.EMAIL_TO || "BAYAN@BAYAN.LAW.SA",
+            to: process.env.EMAIL_TO || "b.a.alj3fr@hotmail.com",
             subject: `طلب استفسار جديد من: ${fullName}`,
             html: `
               <h2>استفسار جديد عبر موقع مكتب بيان</h2>
@@ -66,7 +66,7 @@ export async function POST(request: Request) {
     return NextResponse.json({
       mode: "demo",
       message:
-        "تم التحقق من صحة واكتمال بيانات الاستفسار بنجاح. لتفعيل الإرسال البريدي الآلي المباشر عبر السيرفر إلى BAYAN@BAYAN.LAW.SA، يُرجى إضافة RESEND_API_KEY أو بيانات SMTP في ملف .env.local. في هذه الأثناء، تم تجهيز الرابط المباشر لإرسال البيانات فوريًا إلى واتساب أو تطبيق البريد.",
+        "تم التحقق من صحة واكتمال بيانات الاستفسار بنجاح. لتفعيل الإرسال البريدي الآلي المباشر عبر السيرفر إلى b.a.alj3fr@hotmail.com، يُرجى إضافة RESEND_API_KEY أو بيانات SMTP في ملف .env.local. في هذه الأثناء، تم تجهيز الرابط المباشر لإرسال البيانات فوريًا إلى واتساب أو تطبيق البريد.",
       data: {
         fullName,
         email,

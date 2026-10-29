@@ -71,13 +71,13 @@
 
 ### ⚙️ إعداد متغيرات البيئة (Environment Variables)
 
-لربط نموذج التواصل بخدمة إرسال البريد المباشر إلى `BAYAN@BAYAN.LAW.SA`، قم بنسخ الملف `.env.example` إلى `.env.local` وضع مفاتيحك:
+لربط نموذج التواصل بخدمة إرسال البريد المباشر إلى `b.a.alj3fr@hotmail.com`، قم بنسخ الملف `.env.example` إلى `.env.local` وضع مفاتيحك:
 
 ```env
 # مثال باستخدام Resend:
 RESEND_API_KEY=re_your_api_key_here
 EMAIL_FROM=notifications@bayan.law.sa
-EMAIL_TO=BAYAN@BAYAN.LAW.SA
+EMAIL_TO=b.a.alj3fr@hotmail.com
 ```
 
 ---

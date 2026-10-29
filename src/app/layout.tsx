@@ -79,7 +79,7 @@ export default function RootLayout({
       addressRegion: "المنطقة الشرقية - Eastern Province",
       addressCountry: "SA",
     },
-    email: "BAYAN@BAYAN.LAW.SA",
+    email: "b.a.alj3fr@hotmail.com",
     telephone: "+966566259333",
     url: "https://bayan.law.sa",
     knowsAbout: [

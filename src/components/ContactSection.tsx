@@ -335,8 +335,8 @@ const ContactSectionInner: React.FC<{ isStandalonePage?: boolean }> = ({
                     </span>
                     <p className="text-[11px] text-subtext leading-relaxed">
                       {language === "ar"
-                        ? "وفقًا لمتطلبات المشروع بعدم إظهار رسالة إرسال بريدي وهمية دون وجود مزود خلفي فعلي؛ الكود البرمجي مهيأ وجاهز في المسار /api/contact. لتفعيل الإرسال البريدي المباشر إلى BAYAN@BAYAN.LAW.SA من الخادم، يكفي إضافة مفتاح RESEND_API_KEY أو بيانات SMTP داخل ملف .env.local وسيعمل الإرسال تلقائيًا."
-                        : "Per the specification to remain transparent about backend mail dispatch without misleading success claims, the API route is implemented at /api/contact. To activate direct server-side email delivery to BAYAN@BAYAN.LAW.SA, configure RESEND_API_KEY or SMTP credentials in .env.local."}
+                        ? "وفقًا لمتطلبات المشروع بعدم إظهار رسالة إرسال بريدي وهمية دون وجود مزود خلفي فعلي؛ الكود البرمجي مهيأ وجاهز في المسار /api/contact. لتفعيل الإرسال البريدي المباشر إلى b.a.alj3fr@hotmail.com من الخادم، يكفي إضافة مفتاح RESEND_API_KEY أو بيانات SMTP داخل ملف .env.local وسيعمل الإرسال تلقائيًا."
+                        : "Per the specification to remain transparent about backend mail dispatch without misleading success claims, the API route is implemented at /api/contact. To activate direct server-side email delivery to b.a.alj3fr@hotmail.com, configure RESEND_API_KEY or SMTP credentials in .env.local."}
                     </p>
                   </div>
 
