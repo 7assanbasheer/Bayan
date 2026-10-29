@@ -6,31 +6,40 @@ import { siteConfig } from "@/data/content";
 import { Clock, FileStack, MapPin } from "lucide-react";
 
 export const MetricsSection: React.FC = () => {
-  const { language, t } = useLanguage();
+  const { language } = useLanguage();
 
   const metrics = [
     {
       id: "years",
-      number: siteConfig.experienceYears,
+      stat: siteConfig.experienceYears,
       unit: language === "ar" ? "سنوات" : "Years",
-      title: t("metricsYearsLabel"),
-      description: t("metricsYearsSub"),
+      title: language === "ar" ? "خبرة مهنية متخصصة" : "Professional Experience",
+      description:
+        language === "ar"
+          ? "في العقود التجارية، قطاع البنوك، والشراكات المؤسسية"
+          : "In commercial contracts, banking, and B2B partnerships",
       icon: Clock,
     },
     {
       id: "contracts",
-      number: siteConfig.contractsCount,
+      stat: siteConfig.contractsCount,
       unit: language === "ar" ? "عقدًا" : "Contracts",
-      title: t("metricsContractsLabel"),
-      description: t("metricsContractsSub"),
+      title: language === "ar" ? "ضمن الخبرة العملية والمراجعة" : "Drafted & Audited Contracts",
+      description:
+        language === "ar"
+          ? "صياغة وتدقيق قانوني دقيق لمختلف الاتفاقيات ومذكرات التفاهم"
+          : "Rigorous drafting and analysis of corporate agreements and MOUs",
       icon: FileStack,
     },
     {
       id: "location",
-      number: language === "ar" ? "الشرقية" : "Eastern",
-      unit: language === "ar" ? "المملكة" : "KSA",
-      title: t("metricsLocationLabel"),
-      description: t("metricsLocationSub"),
+      stat: language === "ar" ? "المنطقة الشرقية" : "Eastern Province",
+      unit: "",
+      title: language === "ar" ? "المملكة العربية السعودية" : "Kingdom of Saudi Arabia",
+      description:
+        language === "ar"
+          ? "خدمات حضورية وتغطية استشارية متكاملة عن بُعد لكافة المناطق"
+          : "Regional presence with seamless remote advisory across all regions",
       icon: MapPin,
     },
   ];
@@ -40,46 +49,63 @@ export const MetricsSection: React.FC = () => {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {metrics.map((metric) => {
           const Icon = metric.icon;
+          const isTextStat = metric.id === "location";
+
           return (
             <div
               key={metric.id}
-              className="luxury-card rounded-xl p-6 sm:p-8 bg-white border border-gold-500/25 relative overflow-hidden group"
+              className="luxury-card rounded-xl p-7 bg-white border border-gold-500/25 relative overflow-hidden group flex flex-col justify-between"
             >
               {/* Gold Top Accent */}
-              <div className="absolute top-0 left-0 right-0 h-1 bg-gold-500/40 group-hover:bg-gold-500 transition-colors" />
+              <div className="absolute top-0 left-0 right-0 h-1 bg-gold-500/30 group-hover:bg-gold-500 transition-colors" />
 
-              <div className="flex items-start justify-between">
-                <div>
-                  <div className="flex items-baseline gap-1.5">
-                    <span className="text-3xl sm:text-4xl font-bold font-serif text-navy-900 group-hover:text-gold-600 transition-colors">
-                      {metric.number}
+              <div>
+                {/* Stat & Icon Row */}
+                <div className="flex items-start justify-between gap-4 mb-4">
+                  <div className="flex items-baseline gap-2">
+                    <span
+                      className={`${
+                        isTextStat
+                          ? "text-2xl sm:text-2xl md:text-[1.65rem] font-bold font-arabic text-navy-900"
+                          : "text-3xl sm:text-4xl md:text-5xl font-bold font-serif text-navy-900"
+                      } group-hover:text-gold-600 transition-colors`}
+                    >
+                      {metric.stat}
                     </span>
-                    <span className="text-sm font-semibold text-gold-600">
-                      {metric.unit}
-                    </span>
+                    {metric.unit && (
+                      <span className="text-sm font-semibold text-gold-600 font-arabic">
+                        {metric.unit}
+                      </span>
+                    )}
                   </div>
-                  <h3 className="text-base font-bold text-navy-900 mt-2 font-arabic">
-                    {metric.title}
-                  </h3>
-                  <p className="text-xs text-subtext mt-1 leading-relaxed">
-                    {metric.description}
-                  </p>
+
+                  <div className="w-12 h-12 rounded-xl bg-navy-50 text-navy-900 border border-navy-100 flex items-center justify-center flex-shrink-0 group-hover:bg-gold-50 group-hover:text-gold-700 transition-colors">
+                    <Icon className="w-6 h-6 text-gold-600" />
+                  </div>
                 </div>
 
-                <div className="p-3 rounded-lg bg-navy-50 text-navy-800 border border-navy-100 group-hover:bg-gold-50 group-hover:text-gold-700 transition-colors">
-                  <Icon className="w-6 h-6 text-gold-600" />
-                </div>
-              </div>
+                {/* Clear, Non-repetitive Title */}
+                <h3 className="text-base font-bold text-navy-900 font-arabic mb-1.5 leading-snug">
+                  {metric.title}
+                </h3>
 
-              {/* Disclaimer micro note */}
-              <div className="mt-4 pt-3 border-t border-gray-100 text-[10px] text-gray-400">
-                {language === "ar"
-                  ? "مؤشر توثيقي للخبرة العملية السابقة ولا يمثل ضمانًا لنتائج مستقبلية."
-                  : "Empirical record of professional experience; does not imply outcome warranties."}
+                {/* Subtitle / Description */}
+                <p className="text-xs text-subtext leading-relaxed">
+                  {metric.description}
+                </p>
               </div>
             </div>
           );
         })}
+      </div>
+
+      {/* Single Consolidated Disclaimer Note under the 3 cards (not repeated) */}
+      <div className="mt-3.5 text-center">
+        <p className="text-[11px] text-subtext/75">
+          * {language === "ar"
+            ? "مؤشرات توثيقية للخبرة العملية السابقة ولا تمثل ضمانًا لنتائج قانونية مستقبلية."
+            : "Documented indicators of past professional experience; does not imply guarantees of future legal outcomes."}
+        </p>
       </div>
     </section>
   );
