@@ -32,7 +32,7 @@ export const AboutSection: React.FC = () => {
                     {siteConfig.name[language]}
                   </h3>
                   <p className="text-xs text-gold-600 font-semibold uppercase tracking-wider">
-                    {siteConfig.roleTitle[language]} • {siteConfig.shortDegree}
+                    {siteConfig.roleTitle[language]} • {siteConfig.shortDegree[language]}
                   </p>
                   <p className="text-sm text-subtext leading-relaxed">
                     {siteConfig.aboutSnippet[language]}

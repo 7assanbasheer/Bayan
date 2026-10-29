@@ -2,22 +2,25 @@ import { ServiceItem, FAQItem, ExperienceHighlight, MethodologyStep } from "@/ty
 
 export const siteConfig = {
   name: {
-    ar: "مكتب بيان",
-    en: "Bayan Office",
+    ar: "مكتب بيان لاستشارات العقود",
+    en: "Bayan Office for Contract Consulting",
   },
   consultantName: {
     ar: "بيان الجعفر",
     en: "Bayan Aljafar",
   },
   title: {
-    ar: "مكتب بيان | استشاري عقود احترافية وخدمات قانونية",
-    en: "Bayan Office | Professional Contracts Consultant & Legal Services",
+    ar: "مكتب بيان لاستشارات العقود | استشاري عقود احترافية وخدمات قانونية",
+    en: "Bayan Office for Contract Consulting | Professional Contracts Consultant & Legal Services",
   },
   degree: {
-    ar: "ماجستير في القانون (Master of Law)",
+    ar: "ماجستير في القانون",
     en: "Master of Law (LL.M.)",
   },
-  shortDegree: "Master of Law",
+  shortDegree: {
+    ar: "ماجستير في القانون",
+    en: "Master of Law",
+  },
   roleTitle: {
     ar: "استشاري عقود احترافية",
     en: "Professional Contracts Consultant",
@@ -31,18 +34,18 @@ export const siteConfig = {
   phone: "056 625 9333",
   phoneFormatted: "+966566259333",
   email: "b.a.alj3fr@hotmail.com",
-  whatsappUrl: "https://wa.me/966566259333?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D9%88%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D9%85%D9%83%D8%AA%D8%A8%20%D8%A8%D9%8A%D8%A7%D9%86",
+  whatsappUrl: "https://wa.me/966566259333?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D9%88%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D9%85%D9%83%D8%AA%D8%A8%20%D8%A8%D9%8A%D8%A7%D9%86%20%D9%84%D8%A7%D8%B3%D8%AA%D8%B4%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D9%88%D8%AF",
   tagline: {
     ar: "حلول قانونية وعقود تُبنى على الوضوح والثقة",
     en: "Legal Solutions & Contracts Built on Clarity and Trust",
   },
   heroBio: {
-    ar: "مكتب بيان للخدمات القانونية، استشاري عقود احترافية بقيادة بيان الجعفر (Master of Law)؛ خبرة مهنية تتجاوز خمس سنوات وتجربة عملية في أكثر من 50 عقدًا تجاريًا ومصرفيًا، مع تخصص دقيق في عقود الشركات، قضايا الأحوال الشخصية (الطلاق والنفقة)، ونظام العمل السعودي والشراكات بين الشركات.",
-    en: "Bayan Office for Legal Services, Professional Contracts Consultant led by Bayan Aljafar (LL.M.); over five years of professional experience and practical involvement in more than 50 commercial contracts, specializing in corporate agreements, Saudi Labor Law, Personal Status (divorce & alimony), and inter-company partnerships.",
+    ar: "مكتب بيان لاستشارات العقود، بقيادة بيان الجعفر (ماجستير في القانون)؛ خبرة مهنية تتجاوز خمس سنوات وتجربة عملية في أكثر من 50 عقدًا تجاريًا ومصرفيًا، مع تخصص دقيق في عقود الشركات، قضايا الأحوال الشخصية (الطلاق والنفقة)، ونظام العمل السعودي والشراكات بين الشركات.",
+    en: "Bayan Office for Contract Consulting, led by Bayan Aljafar (Master of Law); over five years of professional experience and practical involvement in more than 50 commercial contracts, specializing in corporate agreements, Saudi Labor Law, Personal Status (divorce & alimony), and inter-company partnerships.",
   },
   aboutSnippet: {
-    ar: "يجمع مكتب بيان بين التأهيل الأكاديمي العالي في القانون والممارسة العملية الراسخة، بصفته استشاري عقود احترافية وخدمات قانونية متخصصة تشمل صياغة وتدقيق العقود، قضايا الأحوال الشخصية (الطلاق، النفقة، الحضانة)، وتطبيقات نظام العمل السعودي وحوكمة الشراكات بدقة وخصوصية متناهية.",
-    en: "Bayan Office unites academic excellence in law with deep practical practice, serving as a professional contracts consultant alongside specialized legal services covering commercial drafting, personal status cases (divorce, alimony, custody), Saudi Labor Law governance, and institutional partnerships.",
+    ar: "يجمع مكتب بيان لاستشارات العقود بين التأهيل الأكاديمي العالي في القانون والممارسة العملية الراسخة، بصفته استشاري عقود احترافية وخدمات قانونية متخصصة تشمل صياغة وتدقيق العقود، قضايا الأحوال الشخصية (الطلاق، النفقة، الحضانة)، وتطبيقات نظام العمل السعودي وحوكمة الشراكات بدقة وخصوصية متناهية.",
+    en: "Bayan Office for Contract Consulting unites academic legal excellence with deep practical practice, serving as a professional contracts consultant alongside specialized legal services covering commercial drafting, personal status cases (divorce, alimony, custody), Saudi Labor Law governance, and institutional partnerships.",
   },
 };
 

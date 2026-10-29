@@ -60,7 +60,7 @@ export default function AboutPage() {
                     {siteConfig.name[language]}
                   </span>
                   <span className="text-gold-400 text-xs font-serif">
-                    {siteConfig.shortDegree}
+                    {siteConfig.shortDegree[language]}
                   </span>
                 </div>
               </div>

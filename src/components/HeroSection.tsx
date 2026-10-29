@@ -25,7 +25,7 @@ export const HeroSection: React.FC = () => {
               <span className="w-2 h-2 rounded-full bg-gold-500" />
               <span>{siteConfig.roleTitle[language]}</span>
               <span className="text-gray-300">•</span>
-              <span className="text-navy-700 font-medium">{siteConfig.shortDegree}</span>
+              <span className="text-navy-700 font-medium">{siteConfig.shortDegree[language]}</span>
               <span className="text-gray-300">•</span>
               <span className="text-subtext font-normal">{siteConfig.location[language]}</span>
             </div>

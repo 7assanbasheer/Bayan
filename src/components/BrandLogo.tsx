@@ -94,7 +94,7 @@ export const BrandLogo: React.FC<BrandLogoProps> = ({ light = false, size = "md"
       <div className="flex flex-col">
         <div className="flex items-baseline gap-2">
           <span className={`font-bold ${textStyles[size].en} ${primaryColor} uppercase transition-colors group-hover:text-gold-600 font-arabic whitespace-nowrap`}>
-            {language === "ar" ? "مكتب بيان" : "BAYAN OFFICE"}
+            {language === "ar" ? "مكتب بيان لاستشارات العقود" : "BAYAN CONTRACT CONSULTING"}
           </span>
         </div>
         <div className="flex items-center gap-2 -mt-0.5 whitespace-nowrap">

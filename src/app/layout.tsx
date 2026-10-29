@@ -6,13 +6,15 @@ import { Footer } from "@/components/Footer";
 import { WhatsAppFloat } from "@/components/WhatsAppFloat";
 
 export const metadata: Metadata = {
-  title: "مكتب بيان | استشاري عقود احترافية وخدمات قانونية",
+  title: "مكتب بيان لاستشارات العقود | استشاري عقود احترافية وخدمات قانونية",
   description:
-    "موقع مكتب بيان للخدمات القانونية والعقود في المنطقة الشرقية، المملكة العربية السعودية. استشاري عقود احترافية بقيادة بيان الجعفر (Master of Law)، خبرة في قضايا الأحوال الشخصية (الطلاق والنفقة)، نظام العمل السعودي، والقطاع المصرفي.",
+    "موقع مكتب بيان لاستشارات العقود والخدمات القانونية في المنطقة الشرقية، المملكة العربية السعودية. استشاري عقود احترافية بقيادة بيان الجعفر (ماجستير في القانون)، خبرة في قضايا الأحوال الشخصية (الطلاق والنفقة)، نظام العمل السعودي، والقطاع المصرفي.",
   keywords: [
+    "مكتب بيان لاستشارات العقود",
     "مكتب بيان",
     "استشاري عقود احترافية",
     "بيان الجعفر",
+    "Bayan Office for Contract Consulting",
     "Bayan Office",
     "Bayan Aljafar",
     "صياغة العقود",
@@ -25,25 +27,25 @@ export const metadata: Metadata = {
     "اتفاقيات الشراكة",
     "المنطقة الشرقية",
     "خدمات قانونية السعودية",
-    "Master of Law",
+    "ماجستير في القانون",
     "القطاع المصرفي",
   ],
-  authors: [{ name: "مكتب بيان - Bayan Office" }],
-  creator: "Bayan Office",
+  authors: [{ name: "مكتب بيان لاستشارات العقود - Bayan Office" }],
+  creator: "Bayan Office for Contract Consulting",
   metadataBase: new URL("https://bayan.law.sa"),
   openGraph: {
     type: "website",
     locale: "ar_SA",
     alternateLocale: ["en_US"],
     url: "https://bayan.law.sa",
-    siteName: "مكتب بيان | استشاري عقود احترافية وخدمات قانونية",
-    title: "مكتب بيان | استشاري عقود احترافية وخدمات قانونية",
+    siteName: "مكتب بيان لاستشارات العقود | استشاري عقود احترافية وخدمات قانونية",
+    title: "مكتب بيان لاستشارات العقود | استشاري عقود احترافية وخدمات قانونية",
     description:
       "حلول قانونية وعقود تُبنى على الوضوح والثقة. استشاري عقود احترافية، قضايا الأحوال الشخصية (الطلاق والنفقة)، نظام العمل، والقطاع المصرفي.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "مكتب بيان | استشاري عقود احترافية وخدمات قانونية",
+    title: "مكتب بيان لاستشارات العقود | استشاري عقود احترافية وخدمات قانونية",
     description:
       "حلول قانونية وعقود تُبنى على الوضوح والثقة في المنطقة الشرقية، المملكة العربية السعودية.",
   },
@@ -65,10 +67,10 @@ export default function RootLayout({
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "LegalService",
-    name: "مكتب بيان",
-    alternateName: "Bayan Office - Professional Contracts Consultant",
+    name: "مكتب بيان لاستشارات العقود",
+    alternateName: "Bayan Office for Contract Consulting - Professional Contracts Consultant",
     description:
-      "مكتب بيان للخدمات القانونية، استشاري عقود احترافية بقيادة بيان الجعفر (ماجستير في القانون) بخبرة مهنية تتجاوز 5 سنوات وتجربة عملية في أكثر من 50 عقدًا تجاريًا ومصرفيًا وقضايا الأحوال الشخصية ونظام العمل بالمملكة العربية السعودية.",
+      "مكتب بيان لاستشارات العقود والخدمات القانونية، استشاري عقود احترافية بقيادة بيان الجعفر (ماجستير في القانون) بخبرة مهنية تتجاوز 5 سنوات وتجربة عملية في أكثر من 50 عقدًا تجاريًا ومصرفيًا وقضايا الأحوال الشخصية ونظام العمل بالمملكة العربية السعودية.",
     hasCredential: {
       "@type": "EducationalOccupationalCredential",
       credentialCategory: "degree",
