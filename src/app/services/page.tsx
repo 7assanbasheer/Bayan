@@ -17,6 +17,8 @@ import {
   ArrowUpRight,
   MessageSquare,
   Shield,
+  Scale,
+  Users,
 } from "lucide-react";
 
 const iconMap: Record<string, React.ElementType> = {
@@ -26,6 +28,8 @@ const iconMap: Record<string, React.ElementType> = {
   Briefcase,
   FileText,
   ShieldCheck,
+  Scale,
+  Users,
 };
 
 export default function ServicesPage() {
@@ -77,7 +81,7 @@ export default function ServicesPage() {
                 : "bg-white text-navy-800 hover:bg-gold-50 border border-gray-200"
             }`}
           >
-            {language === "ar" ? "جميع الخدمات (6)" : "All Services (6)"}
+            {language === "ar" ? `جميع الخدمات (${servicesData.length})` : `All Services (${servicesData.length})`}
           </button>
           {servicesData.map((s) => (
             <button

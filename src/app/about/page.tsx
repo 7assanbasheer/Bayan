@@ -31,7 +31,7 @@ export default function AboutPage() {
             </Link>
             <span>/</span>
             <span className="text-gold-600 font-medium">
-              {language === "ar" ? "نبذة عن المحامية بيان الجعفر" : "About Attorney Bayan Aljafar"}
+              {language === "ar" ? "عن مكتب بيان" : "About Bayan Office"}
             </span>
           </div>
 
@@ -134,7 +134,7 @@ export default function AboutPage() {
             {/* Narrative Content */}
             <div className="p-8 rounded-2xl bg-white border border-gold-500/20 shadow-sm space-y-6">
               <h3 className="text-xl font-bold text-navy-900 font-arabic">
-                {language === "ar" ? "نبذة مهنية عن الخبيرة" : "Professional Biography"}
+                {language === "ar" ? "نبذة عن مكتب بيان والخبرة المهنية" : "About Bayan Office & Professional Practice"}
               </h3>
 
               <div className="space-y-4 text-sm sm:text-base text-subtext leading-relaxed">
@@ -143,13 +143,13 @@ export default function AboutPage() {
                 </p>
                 <p>
                   {language === "ar"
-                    ? "تتبنى المحامية بيان الجعفر نهجًا تعاقديًا يقوم على هندسة البنود بصيغ نظامية دقيقة تحمي التوازن التعاقدي بين الأطراف، وتمنع مواضع التأويل أو النزاع المستقبلي. تتركز ممارساتها في مجالات العقود التجارية، واتفاقيات تقديم الخدمات، وشراكات الأعمال والتحالفات، مع فهم متعمق للاشتراطات الرقابية ومتطلبات الحوكمة في بيئات القطاع المصرفي والمالي."
-                    : "Attorney Bayan Aljafar adheres to a contractual engineering methodology designed to preserve equilibrium between parties while preempting ambiguities and disputes. Her practice centers on commercial contracts, service level agreements, and corporate alliances, fortified by an in-depth understanding of institutional compliance and financial governance."}
+                    ? "يتبنى مكتب بيان نهجًا قانونيًا رصينًا يقوم على هندسة البنود بصيغ نظامية دقيقة تحمي التوازن التعاقدي بين الأطراف وتمنع مواضع التأويل أو النزاع المستقبلي. تتركز ممارسات المكتب بصفته استشاري عقود احترافية في مجالات صياغة وتدقيق العقود، العقود التجارية، قضايا الأحوال الشخصية (الطلاق والنفقة والحضانة والتركات)، ونظام العمل السعودي واللوائح التنظيمية، مع فهم متعمق للاشتراطات الرقابية ومتطلبات الحوكمة في بيئات القطاع المصرفي والمالي."
+                    : "Bayan Office adheres to a rigorous legal and contractual engineering methodology designed to preserve equilibrium between parties while preempting ambiguities and future disputes. The office's practice as a professional contracts consultant spans contract drafting and auditing, corporate agreements, personal status cases (divorce, alimony, custody), and Saudi Labor Law governance, bolstered by deep regulatory acumen in financial institutions."}
                 </p>
                 <p>
                   {language === "ar"
-                    ? "خلال مسيرتها المهنية التي تتجاوز خمس سنوات، شاركت في مراجعة وصياغة أكثر من 50 عقدًا تشمل اتفاقيات شراكة وتعاون، بالإضافة إلى ممارسات عملية ارتبطت ببيئات أعمال رائدة بالمملكة تشمل شركة علم (Elm) وتمارا (Tamara) والعديد من المنشآت الأخرى، مع التركيز التام على تقديم خدمات متوافقة بدقة مع الأنظمة السعودية."
-                    : "Over more than five years of professional practice, she has drafted and audited over 50 contracts spanning joint ventures, commercial agreements, and operational frameworks, with practical experience linked to progressive Saudi ecosystems including Elm, Tamara, and key corporations."}
+                    ? "خلال مسيرتها المهنية التي تتجاوز خمس سنوات، شاركت بيان الجعفر في مراجعة وصياغة أكثر من 50 عقدًا تشمل اتفاقيات شراكة وتعاون، بالإضافة إلى ممارسات عملية ارتبطت ببيئات أعمال رائدة بالمملكة تشمل شركة علم (Elm) وتمارا (Tamara) والعديد من المنشآت الأخرى، مع التركيز التام على تقديم خدمات متوافقة بدقة مع الأنظمة السعودية."
+                    : "Over more than five years of professional practice, Consultant Bayan Aljafar has drafted and audited over 50 contracts spanning joint ventures, commercial agreements, and operational frameworks, with practical experience linked to progressive Saudi ecosystems including Elm, Tamara, and key national enterprises."}
                 </p>
               </div>
             </div>

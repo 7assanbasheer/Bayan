@@ -14,11 +14,11 @@ interface LanguageContextType {
 const UI_TRANSLATIONS: Record<string, { ar: string; en: string }> = {
   // Navigation & Actions
   requestConsultation: {
-    ar: "طلب استشارة أو تواصل",
-    en: "Request Consultation",
+    ar: "طلب خدمة أو تواصل",
+    en: "Request Service",
   },
   contactMe: {
-    ar: "تواصل معي",
+    ar: "تواصل معنا",
     en: "Get in Touch",
   },
   exploreServices: {
@@ -82,8 +82,8 @@ const UI_TRANSLATIONS: Record<string, { ar: string; en: string }> = {
     en: "Legal Expertise with Practical Vision",
   },
   aboutBadge: {
-    ar: "نبذة عن الخبيرة",
-    en: "Profile Overview",
+    ar: "عن مكتب بيان",
+    en: "About Bayan Office",
   },
 
   // Services Section
@@ -146,8 +146,8 @@ const UI_TRANSLATIONS: Record<string, { ar: string; en: string }> = {
 
   // Contact Form
   contactHeading: {
-    ar: "تواصل مع المحامية بيان الجعفر",
-    en: "Connect with Attorney Bayan Aljafar",
+    ar: "تواصل مع مكتب بيان",
+    en: "Connect with Bayan Office",
   },
   contactSubtitle: {
     ar: "نسعد باستقبال استفساراتكم والرد عليها بكل خصوصية واهتمام مهني.",
@@ -246,8 +246,8 @@ const UI_TRANSLATIONS: Record<string, { ar: string; en: string }> = {
     en: "Important Professional Notice:",
   },
   legalDisclaimerText: {
-    ar: "المعلومات الواردة في هذا الموقع ذات طابع تعريفي وتثقيفي عام، ولا تُعد بأي حال استشارة قانونية مخصصة أو بديلاً عن دراسة كل حالة على حدة وفق وقائعها ومستنداتها. إرسال استفسار عبر الموقع لا يُنشئ علاقة تمثيل مهني أو تكليف ملزم إلا بعد الاتفاق الرسمي وتحديد نطاق العمل.",
-    en: "The information on this website is for general informational purposes only and does not constitute formal legal counsel or a substitute for assessing specific circumstances. Submitting an inquiry does not establish an attorney-client relationship or binding mandate until an agreement is formally executed.",
+    ar: "المعلومات الواردة في هذا الموقع ذات طابع تعريفي وتثقيفي عام، ولا تُعد بأي حال بديلاً عن دراسة وبحث كل حالة على حدة وفق وقائعها ومستنداتها ونطاقها التعاقدي. إرسال استفسار عبر الموقع لا يُنشئ علاقة تمثيل مهني أو تكليف ملزم إلا بعد الاتفاق الرسمي وتحديد نطاق العمل.",
+    en: "The information on this website is for general informational purposes only and does not constitute a substitute for evaluating individual case facts and documents. Submitting an inquiry does not establish a formal mandate until an agreement is formally executed.",
   },
   privacyPolicy: {
     ar: "سياسة الخصوصية",
@@ -258,8 +258,8 @@ const UI_TRANSLATIONS: Record<string, { ar: string; en: string }> = {
     en: "Terms & Conditions",
   },
   allRightsReserved: {
-    ar: "جميع الحقوق محفوظة © المحامية بيان الجعفر",
-    en: "All Rights Reserved © Attorney Bayan Aljafar",
+    ar: "جميع الحقوق محفوظة © مكتب بيان",
+    en: "All Rights Reserved © Bayan Office",
   },
   quickLinks: {
     ar: "روابط سريعة",

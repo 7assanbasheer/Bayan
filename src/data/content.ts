@@ -2,18 +2,26 @@ import { ServiceItem, FAQItem, ExperienceHighlight, MethodologyStep } from "@/ty
 
 export const siteConfig = {
   name: {
-    ar: "المحامية بيان الجعفر",
-    en: "Attorney Bayan Aljafar",
+    ar: "مكتب بيان",
+    en: "Bayan Office",
+  },
+  consultantName: {
+    ar: "بيان الجعفر",
+    en: "Bayan Aljafar",
   },
   title: {
-    ar: "المحامية بيان الجعفر | الخدمات القانونية والعقود التجارية",
-    en: "Attorney Bayan Aljafar | Legal Services & Commercial Contracts",
+    ar: "مكتب بيان | استشاري عقود احترافية وخدمات قانونية",
+    en: "Bayan Office | Professional Contracts Consultant & Legal Services",
   },
   degree: {
     ar: "ماجستير في القانون (Master of Law)",
     en: "Master of Law (LL.M.)",
   },
   shortDegree: "Master of Law",
+  roleTitle: {
+    ar: "استشاري عقود احترافية",
+    en: "Professional Contracts Consultant",
+  },
   experienceYears: "+5",
   contractsCount: "+50",
   location: {
@@ -23,18 +31,18 @@ export const siteConfig = {
   phone: "056 625 9333",
   phoneFormatted: "+966566259333",
   email: "BAYAN@BAYAN.LAW.SA",
-  whatsappUrl: "https://wa.me/966566259333?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D9%88%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D9%88%D8%AF%20%D9%88%D8%A7%D9%84%D8%A7%D8%AA%D9%81%D8%A7%D9%82%D9%8A%D8%A7%D8%AA",
+  whatsappUrl: "https://wa.me/966566259333?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D9%88%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D9%85%D9%83%D8%AA%D8%A8%20%D8%A8%D9%8A%D8%A7%D9%86",
   tagline: {
     ar: "حلول قانونية وعقود تُبنى على الوضوح والثقة",
     en: "Legal Solutions & Contracts Built on Clarity and Trust",
   },
   heroBio: {
-    ar: "المحامية بيان الجعفر، حاصلة على درجة الماجستير في القانون، بخبرة مهنية تتجاوز خمس سنوات وتجربة عملية في أكثر من 50 عقدًا، مع خبرات في القطاع المصرفي والعقود التجارية والشراكات والتعاون بين الشركات.",
-    en: "Attorney Bayan Aljafar holds a Master of Law degree, with over five years of professional experience and practical involvement in more than 50 contracts, specializing in the banking sector, commercial contracts, and inter-company partnerships.",
+    ar: "مكتب بيان للخدمات القانونية، استشاري عقود احترافية بقيادة بيان الجعفر (Master of Law)؛ خبرة مهنية تتجاوز خمس سنوات وتجربة عملية في أكثر من 50 عقدًا تجاريًا ومصرفيًا، مع تخصص دقيق في عقود الشركات، قضايا الأحوال الشخصية (الطلاق والنفقة)، ونظام العمل السعودي والشراكات بين الشركات.",
+    en: "Bayan Office for Legal Services, Professional Contracts Consultant led by Bayan Aljafar (LL.M.); over five years of professional experience and practical involvement in more than 50 commercial contracts, specializing in corporate agreements, Saudi Labor Law, Personal Status (divorce & alimony), and inter-company partnerships.",
   },
   aboutSnippet: {
-    ar: "تجمع المحامية بيان الجعفر بين التأهيل الأكاديمي في القانون والخبرة العملية في مجال العقود والتعاملات التجارية، مع اهتمام بتطوير اتفاقيات واضحة ومنظمة تساعد الأطراف على فهم التزاماتهم وتحديد حقوقهم ومسؤولياتهم.",
-    en: "Attorney Bayan Aljafar bridges academic excellence in law with practical depth in contracts and commercial dealings, focusing on crafting transparent, structured agreements that clarify obligations, safeguard rights, and foster sustainable business relationships.",
+    ar: "يجمع مكتب بيان بين التأهيل الأكاديمي العالي في القانون والممارسة العملية الراسخة، بصفته استشاري عقود احترافية وخدمات قانونية متخصصة تشمل صياغة وتدقيق العقود، قضايا الأحوال الشخصية (الطلاق، النفقة، الحضانة)، وتطبيقات نظام العمل السعودي وحوكمة الشراكات بدقة وخصوصية متناهية.",
+    en: "Bayan Office unites academic excellence in law with deep practical practice, serving as a professional contracts consultant alongside specialized legal services covering commercial drafting, personal status cases (divorce, alimony, custody), Saudi Labor Law governance, and institutional partnerships.",
   },
 };
 
@@ -287,6 +295,94 @@ export const servicesData: ServiceItem[] = [
     },
     iconName: "ShieldCheck",
   },
+  {
+    id: "personal-status",
+    title: {
+      ar: "قضايا ومسائل الأحوال الشخصية (الطلاق والنفقة)",
+      en: "Personal Status Matters (Divorce & Alimony)",
+    },
+    shortDescription: {
+      ar: "حلول قانونية متخصصة ومصاغة بعناية في قضايا الطلاق، دعاوى النفقة، وحضانة الأبناء وتوثيق الاتفاقيات الأسرية وفق نظام الأحوال الشخصية السعودي.",
+      en: "Specialized legal services addressing divorce, alimony claims, child custody, and family settlement documentation under Saudi Personal Status Law.",
+    },
+    fullDescription: {
+      ar: "دراسة وصياغة الاتفاقيات القانونية المتعلقة بإنهاء العلاقة الزوجية رضاءً أو عبر القضاء، وتحديد نفقة الأبناء والزوجة بدقة نظامية، وتنظيم الرؤية والزيارة، وتوثيق الحقوق المالية وتقسيم التركات بما يحفظ كرامة الأسرة وحقوق كافة الأطراف بخصوصية تامة.",
+      en: "Formulating legally binding family agreements covering amicable divorce, alimony quantification, custody arrangements, visitation schedules, and family estate division, ensuring strict privacy and statutory compliance.",
+    },
+    suitableFor: {
+      ar: [
+        "الأفراد الراغبون في توثيق اتفاقيات الطلاق والنفقة والحضانة رضائيًا دون نزاع",
+        "إعداد ومتابعة لوائح دعاوى الأحوال الشخصية والنفقة الماضية والمستمرة",
+        "تنظيم الحقوق المالية الأسرية ومؤخر الصداق وقسمة التركات ومخالصات الحقوق",
+      ],
+      en: [
+        "Individuals seeking amicable, documented divorce, alimony, and custody agreements",
+        "Preparing and managing personal status claims and child support arrangements",
+        "Structuring family financial settlements, dowry claims, and estate distribution",
+      ],
+    },
+    prerequisites: {
+      ar: [
+        "تحديد موضوع الطلب بدقة (طلاق، نفقة، حضانة، توثيق اتفاق)",
+        "بيان وجود أبناء وأعمارهم والوضع المالي العام للأطراف",
+        "أي مذكرات أو اتفاقات أولية سابقة بين الطرفين",
+      ],
+      en: [
+        "Definition of engagement scope (divorce, alimony, custody, settlement)",
+        "Overview of dependents, ages, and preliminary financial context",
+        "Any previous understandings or documentation between the parties",
+      ],
+    },
+    iconName: "Scale",
+    badge: {
+      ar: "أحوال شخصية وأسرة",
+      en: "Personal Status",
+    },
+  },
+  {
+    id: "labor-law",
+    title: {
+      ar: "نظام العمل السعودي والعلاقات العمالية",
+      en: "Saudi Labor Law & Workplace Relations",
+    },
+    shortDescription: {
+      ar: "صياغة وتدقيق عقود العمل، لوائح تنظيم العمل الداخلية للمنشآت، ومعالجة قضايا ومستحقات نهاية الخدمة والنزاعات العمالية.",
+      en: "Drafting employment agreements, corporate internal work bylaws, handling end-of-service benefits, and resolving workplace disputes under Saudi Labor Law.",
+    },
+    fullDescription: {
+      ar: "خدمات شاملة لأصحاب الأعمال والموظفين، تتضمن صياغة عقود العمل المتوافقة مع منصة قوى والأنظمة الحديثة، بنود عدم المنافسة والسرية، إعداد لوائح العمل المعتمدة من وزارة الموارد البشرية، وحساب مستحقات مكافأة نهاية الخدمة، والتسوية الودية للخلافات العمالية.",
+      en: "End-to-end guidance for enterprises and professionals: formulating Qiwa-compliant employment contracts, non-compete covenants, Ministry-approved work bylaws, calculating end-of-service indemnities, and labor dispute mediation.",
+    },
+    suitableFor: {
+      ar: [
+        "الشركات والمنشآت الراغبة في اعتماد لوائح عمل داخلية وتدقيق عقود موظفيها",
+        "معالجة إنهاء عقود العمل ومستحقات نهاية الخدمة والتعويضات النظامية",
+        "تسوية الخلافات العمالية والتفاوض الودي قبل التصعيد القضائي",
+      ],
+      en: [
+        "Enterprises requiring internal work regulations and contract audits",
+        "Managing employment termination, severance pay, and statutory indemnities",
+        "Amicable labor dispute resolution and pre-litigation negotiations",
+      ],
+    },
+    prerequisites: {
+      ar: [
+        "نسخة من عقد العمل أو مسودة لائحة تنظيم العمل",
+        "تاريخ بدء العلاقة العمالية وطبيعة الأجر والبدلات",
+        "بيان وقائع النزاع أو الاستفسار المطلوب",
+      ],
+      en: [
+        "Copy of employment contract or draft internal bylaws",
+        "Commencement date, remuneration structure, and allowances",
+        "Summary of facts or specific labor inquiry",
+      ],
+    },
+    iconName: "Users",
+    badge: {
+      ar: "نظام العمل والمنشآت",
+      en: "Labor & Compliance",
+    },
+  },
 ];
 
 export const experienceSectors: ExperienceHighlight[] = [
@@ -373,6 +469,62 @@ export const experienceSectors: ExperienceHighlight[] = [
       ],
     },
     iconName: "FileCheck",
+  },
+  {
+    id: "personal-status-exp",
+    title: {
+      ar: "قضايا ومسائل الأحوال الشخصية (الطلاق والنفقة)",
+      en: "Personal Status, Divorce & Alimony Matters",
+    },
+    subtitle: {
+      ar: "خبرة متخصصة في حماية الحقوق الأسرية والحلول الرضائية",
+      en: "Family law expertise & amicable settlement governance",
+    },
+    description: {
+      ar: "ممارسة قانونية متخصصة في قضايا الأحوال الشخصية تشمل دعاوى الطلاق والخلع، تقدير النفقات الزوجية ونفقات الأبناء، الحضانة والزيارة، وصياغة اتفاقيات التسوية الأسرية وفق نظام الأحوال الشخصية السعودي بأعلى معايير الخصوصية والتوازن.",
+      en: "Dedicated practice in Saudi Personal Status matters encompassing divorce, khula, alimony determination, custody, and formulating legally binding family agreements with absolute discretion and fairness.",
+    },
+    points: {
+      ar: [
+        "خبرة عميقة في تطبيق مواد نظام الأحوال الشخصية السعودي الحديث",
+        "صياغة اتفاقيات الطلاق والنفقة الرضائية الملزمة لتفادي النزاع الأسري",
+        "حساب ومعالجة مستحقات النفقة والتركات والحقوق المالية الأسرية",
+      ],
+      en: [
+        "In-depth command of the modern Saudi Personal Status Law provisions",
+        "Drafting binding amicable divorce and alimony settlements",
+        "Quantification and structuring of spousal support, child maintenance, and estates",
+      ],
+    },
+    iconName: "Scale",
+  },
+  {
+    id: "labor-law-exp",
+    title: {
+      ar: "نظام العمل السعودي والنزاعات العمالية",
+      en: "Saudi Labor Law & Workplace Relations",
+    },
+    subtitle: {
+      ar: "حوكمة العلاقات التعاقدية وحل الخلافات العمالية",
+      en: "Employment governance & dispute mediation",
+    },
+    description: {
+      ar: "خبرة متقدمة في أحكام نظام العمل السعودي ولوائحه التنفيذية، تشمل صياغة وتدقيق عقود العمل واللوائح التنظيمية للمنشآت، وإدارة ملفات إنهاء العقود ومكافآت نهاية الخدمة والتسويات الودية للنزاعات.",
+      en: "Advanced experience in Saudi Labor Law and executive regulations: structuring compliant employment accords, organizational bylaws, handling severance indemnities, and resolving labor friction.",
+    },
+    points: {
+      ar: [
+        "مواءمة عقود العمل مع متطلبات نظام العمل السعودي ومنصة قوى",
+        "إعداد واعتماد لوائح تنظيم العمل الداخلية للمنشآت والشركات",
+        "حساب مستحقات نهاية الخدمة والتسوية الودية للخلافات العمالية",
+      ],
+      en: [
+        "Harmonizing employment agreements with Saudi Labor regulations and Qiwa",
+        "Formulating compliant internal organizational workplace bylaws",
+        "End-of-service benefit calculations and labor dispute mediation",
+      ],
+    },
+    iconName: "Users",
   },
 ];
 
@@ -500,7 +652,7 @@ export const faqsData: FAQItem[] = [
 
 export const navigationLinks = [
   { href: "/", label: { ar: "الرئيسية", en: "Home" } },
-  { href: "/about", label: { ar: "نبذة عن المحامية بيان", en: "About" } },
+  { href: "/about", label: { ar: "عن مكتب بيان", en: "About" } },
   { href: "/services", label: { ar: "الخدمات", en: "Services" } },
   { href: "/experience", label: { ar: "الخبرات المهنية", en: "Experience" } },
   { href: "/faq", label: { ar: "الأسئلة الشائعة", en: "FAQ" } },

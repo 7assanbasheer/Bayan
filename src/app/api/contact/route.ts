@@ -39,7 +39,7 @@ export async function POST(request: Request) {
             to: process.env.EMAIL_TO || "BAYAN@BAYAN.LAW.SA",
             subject: `طلب استفسار جديد من: ${fullName}`,
             html: `
-              <h2>استفسار جديد عبر موقع المحامية بيان الجعفر</h2>
+              <h2>استفسار جديد عبر موقع مكتب بيان</h2>
               <p><strong>الاسم:</strong> ${fullName}</p>
               <p><strong>البريد الإلكتروني:</strong> ${email}</p>
               <p><strong>رقم الهاتف:</strong> ${phone}</p>
@@ -54,7 +54,7 @@ export async function POST(request: Request) {
         if (response.ok) {
           return NextResponse.json({
             mode: "live",
-            message: "تم إرسال استفسارك بنجاح إلى البريد الرسمي للمحامية بيان الجعفر.",
+            message: "تم إرسال استفسارك بنجاح إلى البريد الرسمي لمكتب بيان.",
           });
         }
       } catch (err) {

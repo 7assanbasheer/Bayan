@@ -13,12 +13,16 @@ import {
   ArrowUpRight,
   Lock,
   Award,
+  Scale,
+  Users,
 } from "lucide-react";
 
 const iconMap: Record<string, React.ElementType> = {
   Landmark,
   Building2,
   FileCheck,
+  Scale,
+  Users,
 };
 
 export default function ExperiencePage() {
@@ -81,7 +85,11 @@ export default function ExperiencePage() {
                           ? language === "ar" ? "معايير امتثال مشددة" : "Rigorous Compliance"
                           : index === 1
                           ? language === "ar" ? "تحالفات استراتيجية" : "Strategic Alliances"
-                          : language === "ar" ? "+50 عقدًا عمليًا" : "+50 Executed Contracts"}
+                          : index === 2
+                          ? language === "ar" ? "+50 عقدًا عمليًا" : "+50 Executed Contracts"
+                          : index === 3
+                          ? language === "ar" ? "نظام الأحوال الشخصية" : "Personal Status Law"
+                          : language === "ar" ? "نظام العمل السعودي" : "Saudi Labor Law"}
                       </span>
                     </div>
                   </div>
@@ -128,8 +136,8 @@ export default function ExperiencePage() {
 
           <p className="text-sm sm:text-base text-gray-300 leading-relaxed max-w-4xl">
             {language === "ar"
-              ? "استندت مسيرة المحامية بيان الجعفر إلى تجارب مهنية شملت بيئات أعمال رائدة مثل شركة علم (Elm) وتمارا (Tamara) والعديد من الشركات الوطنية؛ حيث شملت المهام المساهمة في فحص بنود العقود الرقمية، ومواءمة الشروط مع المعايير البنكية والتنظيمية، وإرساء نماذج تعاون مرنة تعزز استدامة الأعمال وتحد من النزاعات."
-              : "Attorney Bayan Aljafar's trajectory encompasses practical engagements interfacing with forward-looking corporate and fintech entities such as Elm, Tamara, and renowned national companies. Engagements concentrated on reviewing digital service agreements, harmonizing clauses with financial standards, and engineering dispute-resistant B2B partnerships."}
+              ? "استندت الخبرات المهنية لمكتب بيان إلى تجارب عملية شملت بيئات أعمال رائدة مثل شركة علم (Elm) وتمارا (Tamara) والعديد من الشركات الوطنية؛ حيث شملت المهام المساهمة في فحص بنود العقود الرقمية، ومواءمة الشروط مع المعايير البنكية والتنظيمية، وإرساء نماذج تعاون مرنة تعزز استدامة الأعمال وتحد من النزاعات."
+              : "The professional foundation of Bayan Office is rooted in practical engagements interfacing with forward-looking corporate and fintech entities such as Elm, Tamara, and renowned national companies. Engagements concentrated on reviewing digital service agreements, harmonizing clauses with financial standards, and engineering dispute-resistant B2B partnerships."}
           </p>
 
           <div className="pt-4 border-t border-navy-800 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">

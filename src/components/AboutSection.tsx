@@ -32,7 +32,7 @@ export const AboutSection: React.FC = () => {
                     {siteConfig.name[language]}
                   </h3>
                   <p className="text-xs text-gold-600 font-semibold uppercase tracking-wider">
-                    {siteConfig.degree[language]}
+                    {siteConfig.roleTitle[language]} • {siteConfig.shortDegree}
                   </p>
                   <p className="text-sm text-subtext leading-relaxed">
                     {siteConfig.aboutSnippet[language]}
@@ -45,24 +45,24 @@ export const AboutSection: React.FC = () => {
                     <CheckCircle2 className="w-4 h-4 text-gold-600 flex-shrink-0" />
                     <span>
                       {language === "ar"
-                        ? "خبرة مهنية متخصصة تتجاوز 5 سنوات"
-                        : "Over 5 years of dedicated professional practice"}
+                        ? "استشاري عقود احترافية وخبرة تتجاوز 5 سنوات"
+                        : "Contracts consultant with 5+ years of practice"}
                     </span>
                   </div>
                   <div className="flex items-center gap-2.5">
                     <CheckCircle2 className="w-4 h-4 text-gold-600 flex-shrink-0" />
                     <span>
                       {language === "ar"
-                        ? "سجل عملي يشمل أكثر من 50 عقدًا تجاريًا ومصرفيًا"
-                        : "Track record spanning 50+ commercial & banking agreements"}
+                        ? "خبرة في قضايا الأحوال الشخصية (الطلاق والنفقة)"
+                        : "Personal status expertise (divorce & alimony)"}
                     </span>
                   </div>
                   <div className="flex items-center gap-2.5">
                     <CheckCircle2 className="w-4 h-4 text-gold-600 flex-shrink-0" />
                     <span>
                       {language === "ar"
-                        ? "التركيز على الوضوح وتجنب النزاعات التعاقدية"
-                        : "Proactive dispute prevention via transparent drafting"}
+                        ? "خبرة في نظام العمل السعودي والنزاعات العمالية"
+                        : "Saudi Labor Law & workplace regulations"}
                     </span>
                   </div>
                 </div>

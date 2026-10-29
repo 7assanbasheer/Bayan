@@ -4,7 +4,7 @@ import React from "react";
 import Link from "next/link";
 import { useLanguage } from "@/context/LanguageContext";
 import { siteConfig } from "@/data/content";
-import { ArrowUpRight, ShieldCheck, Scale, Award, FileText, CheckCircle, MessageSquare } from "lucide-react";
+import { ArrowUpRight, ShieldCheck, Scale, Award, FileText, CheckCircle, MessageSquare, Users } from "lucide-react";
 
 export const HeroSection: React.FC = () => {
   const { language, t, isRtl } = useLanguage();
@@ -23,7 +23,9 @@ export const HeroSection: React.FC = () => {
             {/* Subtle Eyebrow Badge */}
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-gold-500/30 text-navy-900 shadow-sm text-xs font-semibold">
               <span className="w-2 h-2 rounded-full bg-gold-500" />
-              <span>{siteConfig.degree[language]}</span>
+              <span>{siteConfig.roleTitle[language]}</span>
+              <span className="text-gray-300">•</span>
+              <span className="text-navy-700 font-medium">{siteConfig.shortDegree}</span>
               <span className="text-gray-300">•</span>
               <span className="text-subtext font-normal">{siteConfig.location[language]}</span>
             </div>
@@ -104,7 +106,7 @@ export const HeroSection: React.FC = () => {
                         {siteConfig.name[language]}
                       </h2>
                       <p className="text-xs text-gold-600 font-medium">
-                        {siteConfig.shortDegree}
+                        {siteConfig.roleTitle[language]}
                       </p>
                     </div>
                   </div>
@@ -114,45 +116,45 @@ export const HeroSection: React.FC = () => {
                 </div>
 
                 {/* Featured Core Focus List */}
-                <div className="py-6 space-y-4">
+                <div className="py-6 space-y-3.5">
                   <div className="p-3.5 rounded-lg bg-ivory/60 border border-gold-500/15 flex items-start gap-3">
                     <FileText className="w-5 h-5 text-gold-600 mt-0.5 flex-shrink-0" />
                     <div>
                       <h4 className="text-xs font-bold text-navy-900">
-                        {language === "ar" ? "صياغة وتدقيق العقود" : "Contract Drafting & Auditing"}
+                        {language === "ar" ? "استشاري عقود احترافية وتجارية" : "Professional Contract Structuring"}
                       </h4>
                       <p className="text-[11px] text-subtext mt-0.5">
                         {language === "ar"
-                          ? "حماية الحقوق ومنع الثغرات النظامية في أكثر من 50 عقدًا عمليًا."
-                          : "Safeguarding interests across 50+ drafted & audited contracts."}
+                          ? "حماية الحقوق وحوكمة بنود العقود في أكثر من 50 عقدًا تجاريًا ومصرفيًا."
+                          : "Safeguarding interests across 50+ commercial & corporate contracts."}
                       </p>
                     </div>
                   </div>
 
                   <div className="p-3.5 rounded-lg bg-ivory/60 border border-gold-500/15 flex items-start gap-3">
-                    <ShieldCheck className="w-5 h-5 text-navy-700 mt-0.5 flex-shrink-0" />
+                    <Scale className="w-5 h-5 text-navy-800 mt-0.5 flex-shrink-0" />
                     <div>
                       <h4 className="text-xs font-bold text-navy-900">
-                        {language === "ar" ? "الشراكات والاتفاقيات بين الشركات" : "Corporate Strategic Alliances"}
+                        {language === "ar" ? "قضايا الأحوال الشخصية (الطلاق والنفقة)" : "Personal Status, Divorce & Alimony"}
                       </h4>
                       <p className="text-[11px] text-subtext mt-0.5">
                         {language === "ar"
-                          ? "تنظيم التحالفات وعقود التعاون مع كبرى الكيانات والشركات الرائدة."
-                          : "Structuring alliances with leading corporate & tech players."}
+                          ? "خبرة في قضايا الطلاق، دعاوى النفقة، الحضانة وتوثيق الاتفاقيات الأسرية."
+                          : "Family settlement agreements, divorce, alimony, and custody matters."}
                       </p>
                     </div>
                   </div>
 
                   <div className="p-3.5 rounded-lg bg-ivory/60 border border-gold-500/15 flex items-start gap-3">
-                    <Scale className="w-5 h-5 text-gold-600 mt-0.5 flex-shrink-0" />
+                    <Users className="w-5 h-5 text-gold-600 mt-0.5 flex-shrink-0" />
                     <div>
                       <h4 className="text-xs font-bold text-navy-900">
-                        {language === "ar" ? "القطاع المصرفي والمالي" : "Banking & Financial Sector"}
+                        {language === "ar" ? "نظام العمل السعودي والعلاقات العمالية" : "Saudi Labor Law & Workplace"}
                       </h4>
                       <p className="text-[11px] text-subtext mt-0.5">
                         {language === "ar"
-                          ? "فهم عميق للاشتراطات الرقابية ومتطلبات الحوكمة والتمويل."
-                          : "Rigorous compliance, risk governance, and financing terms."}
+                          ? "عقود العمل، لوائح تنظيم العمل، ومستحقات نهاية الخدمة والنزاعات العمالية."
+                          : "Employment contracts, organizational bylaws, and labor disputes."}
                       </p>
                     </div>
                   </div>

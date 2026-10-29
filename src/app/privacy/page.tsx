@@ -36,8 +36,8 @@ export default function PrivacyPage() {
           </h1>
           <p className="text-sm text-subtext">
             {language === "ar"
-              ? "تاريخ آخر تحديث: 2026 | المحامية بيان الجعفر للخدمات القانونية والعقود"
-              : "Last updated: 2026 | Attorney Bayan Aljafar Legal & Contractual Services"}
+              ? "تاريخ آخر تحديث: 2026 | مكتب بيان للخدمات القانونية والعقود"
+              : "Last updated: 2026 | Bayan Office Legal & Contractual Services"}
           </p>
         </div>
 
@@ -68,8 +68,8 @@ export default function PrivacyPage() {
             </h3>
             <p>
               {language === "ar"
-                ? "نلتزم في موقع المحامية بيان الجعفر بجمع الحد الأدنى الضروري فقط من بيانات التواصل الأساسية (الاسم، البريد الإلكتروني، رقم الهاتف، والوصف العام للاستفسار) لغرض الرد وتنسيق المواعيد وتحديد نطاق الخدمات."
-                : "We collect only the minimal essential contact data (name, email, phone number, and generalized inquiry overview) solely to evaluate your request and coordinate next steps."}
+                ? "نلتزم في موقع مكتب بيان بجمع الحد الأدنى الضروري فقط من بيانات التواصل الأساسية (الاسم، البريد الإلكتروني، رقم الهاتف، والوصف العام للاستفسار) لغرض الرد وتنسيق المواعيد وتحديد نطاق الخدمات."
+                : "At Bayan Office, we collect only the minimal essential contact data (name, email, phone number, and generalized inquiry overview) solely to evaluate your request and coordinate next steps."}
             </p>
             <p className="text-navy-900 font-medium text-xs bg-ivory p-3 rounded border border-gold-500/20">
               {language === "ar"
@@ -118,8 +118,8 @@ export default function PrivacyPage() {
             </h3>
             <p>
               {language === "ar"
-                ? "يحق للعميل في أي وقت طلب تصحيح أو استعراض أو حذف بيانات التواصل الخاصة به التي زوّدنا بها عبر التواصل المباشر مع المحامية بيان الجعفر على البريد المعتمد BAYAN@BAYAN.LAW.SA."
-                : "You reserve the right under the Saudi Personal Data Protection Law (PDPL) to request the inspection, rectification, or erasure of your contact details by writing to BAYAN@BAYAN.LAW.SA."}
+                ? "يحق للعميل في أي وقت طلب تصحيح أو استعراض أو حذف بيانات التواصل الخاصة به التي زوّدنا بها عبر التواصل المباشر مع مكتب بيان على البريد المعتمد BAYAN@BAYAN.LAW.SA."
+                : "You reserve the right under the Saudi Personal Data Protection Law (PDPL) to request the inspection, rectification, or erasure of your contact details by writing to Bayan Office at BAYAN@BAYAN.LAW.SA."}
             </p>
           </div>
 

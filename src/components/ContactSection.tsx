@@ -316,7 +316,7 @@ const ContactSectionInner: React.FC<{ isStandalonePage?: boolean }> = ({
                       </a>
 
                       <a
-                        href={`mailto:${siteConfig.email}?subject=${encodeURIComponent("طلب استشارة قانونية - " + formData.fullName)}&body=${encodeURIComponent(
+                        href={`mailto:${siteConfig.email}?subject=${encodeURIComponent("طلب خدمات قانونية - " + formData.fullName)}&body=${encodeURIComponent(
                           `الاسم: ${formData.fullName}\nرقم الهاتف: ${formData.phone}\nنوع الخدمة: ${formData.serviceType}\nوسيلة التواصل المفضلة: ${formData.preferredContact}\n\nالوصف:\n${formData.message}`
                         )}`}
                         className="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded bg-navy-900 hover:bg-navy-800 text-white text-xs font-bold transition-colors shadow-sm"

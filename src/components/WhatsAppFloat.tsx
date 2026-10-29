@@ -77,7 +77,7 @@ export const WhatsAppFloat: React.FC = () => {
       <div className="flex items-center gap-2">
         {!isOpen && (
           <span className="hidden sm:inline-flex items-center bg-navy-950/90 text-gold-300 text-xs font-medium px-3 py-1.5 rounded-full shadow-lg border border-gold-500/30 backdrop-blur-sm">
-            {language === "ar" ? "تواصل مع المحامية بيان" : "Chat with Attorney Bayan"}
+            {language === "ar" ? "تواصل مع مكتب بيان" : "Contact Bayan Office"}
           </span>
         )}
 

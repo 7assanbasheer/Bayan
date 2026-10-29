@@ -34,8 +34,8 @@ export default function TermsPage() {
           </h1>
           <p className="text-sm text-subtext">
             {language === "ar"
-              ? "المحامية بيان الجعفر للخدمات القانونية والعقود التجارية | المنطقة الشرقية، المملكة العربية السعودية"
-              : "Attorney Bayan Aljafar Legal & Commercial Contract Services | Eastern Province, Saudi Arabia"}
+              ? "مكتب بيان للخدمات القانونية واستشاري العقود الاحترافية | المنطقة الشرقية، المملكة العربية السعودية"
+              : "Bayan Office for Legal Services & Contracts Consultant | Eastern Province, Saudi Arabia"}
           </p>
         </div>
 
@@ -49,8 +49,8 @@ export default function TermsPage() {
           </div>
           <p className="text-xs sm:text-sm text-gray-300 leading-relaxed">
             {language === "ar"
-              ? "كافة المقالات والمعلومات والبيانات المعروضة على هذا الموقع هي لأغراض تعريفية وتثقيفية عامة فقط، ولا تُشكل بأي حال من الأحوال مشورة قانونية مخصصة أو رأيًا ملزمًا. لا يترتب على الاطلاع على هذا الموقع أو إرسال استفسار من خلاله نشوء أي علاقة وكالة أو تمثيل مهني بين المحامية بيان الجعفر والزائر. يخضع تقديم أي خدمة قانونية لاتفاق مسبق ومكتوب يحدد نطاق العمل والأتعاب وفق الأنظمة السعودية المعمول بها."
-              : "All content, summaries, and informational materials presented on this website are for general informational purposes only and do not constitute tailored legal counsel or binding legal opinions. Browsing this site or transmitting inquiries does not create an attorney-client relationship. Formal engagements require an executed written agreement specifying scope and professional terms under applicable Saudi statutory regulations."}
+              ? "كافة المقالات والمعلومات والبيانات المعروضة على هذا الموقع هي لأغراض تعريفية وتثقيفية عامة فقط، ولا تُشكل بأي حال من الأحوال مشورة قانونية مخصصة أو رأيًا ملزمًا. لا يترتب على الاطلاع على هذا الموقع أو إرسال استفسار من خلاله نشوء أي علاقة وكالة أو تمثيل مهني بين مكتب بيان والزائر. يخضع تقديم أي خدمة قانونية أو تعاقدية لاتفاق مسبق ومكتوب يحدد نطاق العمل والأتعاب وفق الأنظمة السعودية المعمول بها."
+              : "All content, summaries, and informational materials presented on this website are for general informational purposes only and do not constitute tailored legal counsel or binding legal opinions. Browsing this site or transmitting inquiries does not create a formal representation relationship. Formal engagements require an executed written agreement specifying scope and professional terms under applicable Saudi statutory regulations."}
           </p>
         </div>
 
@@ -75,8 +75,8 @@ export default function TermsPage() {
             </h3>
             <p>
               {language === "ar"
-                ? "جميع النصوص والتصاميم والشعارات والمحتوى التحريري المنشور على الموقع هي ملك حصري للمحامية بيان الجعفر ومحمية بموجب أنظمة حماية حقوق المؤلف والعلامات التجارية في المملكة العربية السعودية. يُمنع نسخ أو إعادة نشر أي جزء دون إذن كتابي مسبق."
-                : "All texts, structural layouts, typographic emblems, and original editorial content are the exclusive intellectual property of Attorney Bayan Aljafar, protected under Saudi copyright and IP laws."}
+                ? "جميع النصوص والتصاميم والشعارات والمحتوى التحريري المنشور على الموقع هي ملك حصري لمكتب بيان ومحمية بموجب أنظمة حماية حقوق المؤلف والعلامات التجارية في المملكة العربية السعودية. يُمنع نسخ أو إعادة نشر أي جزء دون إذن كتابي مسبق."
+                : "All texts, structural layouts, typographic emblems, and original editorial content are the exclusive intellectual property of Bayan Office, protected under Saudi copyright and IP laws."}
             </p>
           </div>
 
@@ -87,8 +87,8 @@ export default function TermsPage() {
             </h3>
             <p>
               {language === "ar"
-                ? "لا تتحمل المحامية بيان الجعفر أي مسؤولية عن أي قرارات أو تصرفات يتخذها الزائر اعتمادًا على المحتوى العام المنشور دون الحصول على استشارة قانونية مهنية مخصصة لدراسة مستندات الحالة المحددة."
-                : "Attorney Bayan Aljafar assumes no liability for actions taken by visitors based solely on generalized site information in lieu of engaging qualified professional counsel to review individual contract dossiers."}
+                ? "لا يتحمل مكتب بيان أي مسؤولية عن أي قرارات أو تصرفات يتخذها الزائر اعتمادًا على المحتوى العام المنشور دون الحصول على دراسة مهنية مخصصة لبحث مستندات الحالة المحددة ونطاقها التعاقدي."
+                : "Bayan Office assumes no liability for actions taken by visitors based solely on generalized site information in lieu of engaging professional counsel to review individual dossiers."}
             </p>
           </div>
 

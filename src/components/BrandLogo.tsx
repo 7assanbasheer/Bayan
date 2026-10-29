@@ -93,17 +93,17 @@ export const BrandLogo: React.FC<BrandLogoProps> = ({ light = false, size = "md"
       {/* Typography Label */}
       <div className="flex flex-col">
         <div className="flex items-baseline gap-2">
-          <span className={`font-serif font-bold ${textStyles[size].en} ${primaryColor} uppercase transition-colors group-hover:text-gold-600`}>
-            BAYAN ALJAFAR
+          <span className={`font-bold ${textStyles[size].en} ${primaryColor} uppercase transition-colors group-hover:text-gold-600 font-arabic whitespace-nowrap`}>
+            {language === "ar" ? "مكتب بيان" : "BAYAN OFFICE"}
           </span>
         </div>
         <div className="flex items-center gap-2 -mt-0.5 whitespace-nowrap">
           <span className={`${textStyles[size].ar} ${goldColor} font-semibold font-arabic whitespace-nowrap`}>
-            المحامية بيان الجعفر
+            {language === "ar" ? "استشاري عقود احترافية" : "Contracts Consultant"}
           </span>
           <span className="w-1 h-1 rounded-full bg-gold-500/50 flex-shrink-0" />
           <span className={`${textStyles[size].subtitle} ${secondaryColor} uppercase tracking-wider font-medium whitespace-nowrap`}>
-            {language === "ar" ? "خدمات قانونية وعقود" : "Legal & Contracts"}
+            {language === "ar" ? "وخدمات قانونية" : "Legal Services"}
           </span>
         </div>
       </div>

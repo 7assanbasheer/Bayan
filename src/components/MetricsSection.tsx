@@ -38,8 +38,8 @@ export const MetricsSection: React.FC = () => {
       title: language === "ar" ? "المملكة العربية السعودية" : "Kingdom of Saudi Arabia",
       description:
         language === "ar"
-          ? "خدمات حضورية وتغطية استشارية متكاملة عن بُعد لكافة المناطق"
-          : "Regional presence with seamless remote advisory across all regions",
+          ? "خدمات حضورية وتغطية مهنية متكاملة عن بُعد لكافة المناطق"
+          : "Regional presence with seamless remote professional coverage across all regions",
       icon: MapPin,
     },
   ];

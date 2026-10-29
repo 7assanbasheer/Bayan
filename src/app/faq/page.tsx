@@ -133,8 +133,8 @@ export default function FAQPage() {
           </h3>
           <p className="text-xs sm:text-sm text-gray-300 max-w-md mx-auto">
             {language === "ar"
-              ? "المحامية بيان الجعفر تسعد بتقديم الإيضاحات اللازمة ومناقشة تفاصيل طلبكم."
-              : "Attorney Bayan Aljafar is ready to clarify your requirements and evaluate next steps."}
+              ? "مكتب بيان يسعد بتقديم الإيضاحات اللازمة ومناقشة تفاصيل طلبكم."
+              : "Bayan Office is ready to clarify your requirements and evaluate next steps."}
           </p>
           <div className="pt-2 flex flex-wrap justify-center gap-3">
             <Link
